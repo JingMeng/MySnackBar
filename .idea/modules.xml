@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/20210621-MySnackBar.iml" filepath="$PROJECT_DIR$/.idea/modules/20210621-MySnackBar.iml" group="MySnackBar" />
       <module fileurl="file://$PROJECT_DIR$/MySnackBar.iml" filepath="$PROJECT_DIR$/MySnackBar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MySnackBar-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MySnackBar-app.iml" group="MySnackBar/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mysnackbar/com.trycatch.android-mysnackbar.iml" filepath="$PROJECT_DIR$/.idea/modules/mysnackbar/com.trycatch.android-mysnackbar.iml" group="MySnackBar/mysnackbar" />
       <module fileurl="file://$PROJECT_DIR$/mysnackbar/mysnackbar.iml" filepath="$PROJECT_DIR$/mysnackbar/mysnackbar.iml" />
     </modules>
   </component>

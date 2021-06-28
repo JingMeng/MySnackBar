@@ -2,11 +2,23 @@
 
 buildscript {
     repositories {
+
+        //Unable to resolve dependency for ':app@debug/compileClasspath': Could not resolve androidx.core:core-ktx:+.
+        //全开代理会出现上面的问题，需要把下面几个参数放在最前面
+        google()
         jcenter()
         mavenCentral()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
+//        google()
+//        jcenter()
+//        mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath 'com.android.tools.build:gradle:4.0.1'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.4'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
         // NOTE: Do not place your application dependencies here; they belong
@@ -16,8 +28,20 @@ buildscript {
 
 allprojects {
     repositories {
+
+        //Unable to resolve dependency for ':app@debug/compileClasspath': Could not resolve androidx.core:core-ktx:+.
+        //全开代理会出现上面的问题，需要把下面几个参数放在最前面
+        google()
         jcenter()
         mavenCentral()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
+//        google()
+//        jcenter()
+//        mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
     tasks.withType(Javadoc).all { enabled = false }
 }
